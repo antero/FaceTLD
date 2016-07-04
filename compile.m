@@ -20,8 +20,8 @@ clc; clear all; cd mex;
 
 if ispc
     disp('PC');
-    include = ' -Ic:\OpenCV2.2\include\opencv\ -Ic:\OpenCV2.2\include\';
-    libpath = 'c:\OpenCV2.2\lib\';
+    include = ' -IC:\opencv2.4.13\build\include\opencv\ -IC:\opencv2.4.13\build\include\';
+    libpath = 'C:\opencv2.4.13\build\x64\vc12\lib\';
     files = dir([libpath '*.lib']);
     
     lib = [];
